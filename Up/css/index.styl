@@ -1,0 +1,240 @@
+@import "myreset.css"
+
+html, body, .swiper-container, .swiper-wrapper
+  width 100%
+  height 100%
+
+#page1, #page2
+  background url("../img/bg-home.png") no-repeat
+  background-size 100% 100%
+
+.logo__top
+  box-sizing: border-box;
+  padding: 30px 15px;
+  width: 100%;
+  height: 100px;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 3
+  text-align center
+
+.icon-music
+  width: 70px;
+  height: 70px;
+  background: url(http://assets.dxycdn.com/templates/2015/duphaston/img/icon-music.png) 0 0 no-repeat;
+  background-size: 70px 140px;
+  position: fixed;
+  top: 105px;
+  right: 80px;
+  z-index: 100;
+  -webkit-animation: start 1s infinite linear;
+  animation: start 1s infinite linear
+
+@-webkit-keyframes start {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg)
+  }
+}
+
+@keyframes start {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg)
+  }
+}
+
+.icon-music--stop
+  background-position: 0 -70px;
+  -webkit-animation: stop 1s infinite linear;
+  animation: stop 1s infinite linear
+
+@-webkit-keyframes stop {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes stop {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+}
+
+.section
+  width 100%
+  height 100%
+  position relative
+  background url("../img/bg-home1.png") no-repeat
+  background-size 100% 100%
+  & > div
+    position: absolute
+    width 80%
+    left 10%
+
+#page1
+  .page1_top
+    top 30%
+    position absolute
+    img
+      width 100%
+
+#page2
+  .wrapper
+    position absolute
+    top: 40%
+    left: 50%
+    transform translate(-50%, -50%) !important
+    & > div
+      text-align center
+      img
+        width 100%
+    .page2_middle
+      margin 45px 0
+      img
+        width 50%
+    .logo
+      position absolute
+      bottom -480px
+
+#page3
+  .wrapper
+    position absolute
+    top: 42%
+    left: 50%
+    transform translate(-50%, -50%) !important
+    & > div
+      text-align center
+      img
+        width 100%
+    .page3_bottom
+      margin 20px 0
+      img
+        width 100%
+
+#page4, #page5, #page6
+  .wrapper
+    width 88%
+    position absolute
+    top: 42%
+    left: 50%
+    transform translate(-50%, -50%) !important
+    & > div
+      text-align center
+      img
+        width 100%
+    .page6_bottom
+      margin 40px 0
+      img
+        width 80%
+    .page6_top
+      img
+        width 80%
+
+#page7
+  .wrapper
+    width 88%
+    position absolute
+    top: 42%
+    left: 50%
+    transform translate(-50%, -50%) !important
+    & > div
+      text-align center
+      img
+        width 100%
+    .page7_top
+      img
+        width 80%
+        height 500px
+    .page7_bottom
+      width 190px
+      height 190px
+      background url("../img/zhiwen.png") no-repeat
+      background-size 100% 100%
+      margin 0 auto
+    .zhiwentip_1,.zhiwentip_2
+      padding-top 500px
+      margin 60px 0
+      img
+        width 50%
+        pointer-events: none
+        -webkit-user-select:none;
+        -webkit-touch-callout:none;
+    .hideImg
+      overflow hidden
+    .changeImg
+      position absolute
+      left 5%
+
+#page8
+  .wrapper
+    width 88%
+    position absolute
+    top: 42%
+    left: 50%
+    transform translate(-50%, -50%) !important
+    & > div
+      text-align center
+      img
+        width 80%
+    .page8_middle
+      .text
+        text-align: center;
+        color: #004a9e;
+        font-weight: bold;
+        font-size 50px
+        margin 30px 0
+
+.section
+  .next-btn
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    background: url('../img/arrow.png') no-repeat center center;
+    background-size: 100% 100%
+    -webkit-animation: operate-ani .5s linear 1s infinite alternate;
+    animation: operate-ani .5s linear 1s infinite alternate
+
+@-webkit-keyframes operate-ani {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  to {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3)
+  }
+}
+
+@keyframes operate-ani {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  to {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3)
+  }
+}
