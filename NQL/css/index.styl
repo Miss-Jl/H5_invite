@@ -1,0 +1,289 @@
+@import "myreset.css"
+
+html, body, .swiper-container
+  height 100%
+
+.swiper-container
+  .section
+    background url("../img/page1_bg.png") no-repeat
+    background-size 100% 100%
+    & > div
+      position absolute
+    .page1_top
+      width 80%
+      left 10%
+      top 50px
+      img
+        width 100%
+    .page1_plane
+      right 5px
+      top 280px
+      width 40%
+      height 125px
+      position absolute
+      z-index 10
+      img
+        width 100%
+    .page1_text
+      bottom 700px
+      z-index 20
+      left 280px
+      img
+        width 180px
+    .page1_text_wrapper
+      position absolute
+      bottom 100px
+      width 88%
+      left 6%
+      height 660px
+      background url('../img/page1_text_bg.png') no-repeat
+      background-size 100% 100%
+      text-align center
+      &>div
+        &:first-child
+          margin-top 110px
+        img
+          width 80%
+          left 10%
+          -position absolute
+          margin 20px 0
+    .page1_bottom_logo
+      bottom 0
+      width 100%
+      height 100px
+
+#page2, #page3
+  background url("../img/page2_bg.png") no-repeat
+  background-size 100% 100%
+  .wrapper
+    top 193px
+    text-align center
+    bottom 10px
+    left: 10px
+    right 10px
+    .score
+      position absolute
+      height 160px
+      text-align center
+      width 100%
+      z-index 10
+      img
+        width 100%
+        height 100%
+    .option
+      background url("../img/page2_option_bg.png") no-repeat
+      background-size 100% 100%
+      position absolute
+      top 152px
+      width 100%
+      &>div
+        width 100%
+        img
+          max-width 100%
+          height 281px
+
+#page3
+  background url("../img/page3_bg.png") no-repeat
+  background-size 100% 100%
+  .title
+    z-index 100
+    width 100%
+    text-align center
+    img
+      width 90%
+  .score
+    top 15px
+
+#page4
+  background url("../img/page4_bg.png") no-repeat
+  background-size 100% 100%
+  .title
+    z-index 100
+    width 100%
+    text-align center
+    img
+      width 90%
+  .wrapper
+    top 240px
+    text-align center
+    bottom 10px
+    left: 10px
+    right 10px
+    .time
+      z-index 100
+      position relative
+      img
+        width 100%
+        z-index 100
+    .options
+      width 100%
+      background url("../img/page4_option_bg.png") no-repeat
+      background-size 100% 100%
+      position absolute
+      top 180px
+      bottom 10px
+      img
+        display block
+        margin 20px auto
+      .title1
+        margin-bottom -40px
+      .title2
+        margin 30px auto 40px
+      .page4_1
+        position relative
+        z-index 200
+
+#page5
+  background url("../img/page6_bg.jpg") no-repeat
+  background-size 100% 100%
+  .page5-top
+    width 100%
+    text-align center
+    z-index 10
+  .wrapper
+    bottom 15px
+    left 15px
+    right: 15px
+    top 290px
+    background url("../img/page5_bottom_bg.png") no-repeat
+    background-size 100% 100%
+    text-align center
+    .top, .bottom
+      img
+        display block
+        margin 0 auto
+        max-width 100%
+      .title
+        margin 20px auto
+    .top
+      margin-top 50px
+    .bottom
+      margin-top 10px
+    .middle
+      position relative
+      .line2
+        position absolute
+        right 0
+        top -20px
+
+#page6
+  background url("../img/page6_bg.jpg") no-repeat
+  background-size 100% 100%
+  .wrapper
+    width 90%
+    left 5%
+    top 120px
+    text-align center
+    .text_1
+      margin-top 80px
+    .line
+      margin 40px 0
+      display inline-block
+
+
+.icon-music
+  width: 70px;
+  height: 70px;
+  background: url(http://assets.dxycdn.com/templates/2015/duphaston/img/icon-music.png) 0 0 no-repeat;
+  background-size: 70px 140px;
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  z-index: 9999;
+  -webkit-animation: start 1s infinite linear;
+  animation: start 1s infinite linear
+
+@-webkit-keyframes start {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg)
+  }
+}
+
+@keyframes start {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg)
+  }
+}
+
+.icon-music--stop
+  background-position: 0 -70px;
+  -webkit-animation: stop 1s infinite linear;
+  animation: stop 1s infinite linear
+
+@-webkit-keyframes stop {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes stop {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+}
+
+/*
+
+@media screen and (min-device-width: 320px)  and (max-device-width: 568px)
+  .swiper-container
+    .section
+      .page1_text_wrapper
+        height 280px
+        .page1_text1
+          top 50px
+        .page1_text2
+          top 110px
+        .page1_text3
+          top 170px
+        .page1_text4
+          top 230px
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait)
+  .swiper-container
+    .section
+      .page1_text_wrapper
+        height 320px
+        .page1_text1
+          top 50px
+        .page1_text2
+          top 120px
+        .page1_text3
+          top 190px
+        .page1_text4
+          top 260px
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait)
+  .swiper-container
+    .section
+      .page1_text_wrapper
+        height 370px
+        .page1_text1
+          top 60px
+        .page1_text2
+          top 135px
+        .page1_text3
+          top 210px
+        .page1_text4
+          top 285px
+
+*/
